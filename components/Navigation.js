@@ -60,7 +60,7 @@ const Navigation = () => {
           <Link href="/"
             className={"font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 uppercase dark:text-white"}
           >
-            Nitin Reddy
+            CODERMAN
           </Link>
         </Link>
         <div className="flex items-center">

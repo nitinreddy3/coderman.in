@@ -9,7 +9,9 @@ const About = () => {
       <div className="lg:space-x-5 lg:flex lg:flex-row item-center lg:-mx-4 flex flex-col-reverse text-center lg:text-left">
 
         <div className="flex-shrink-0 lg:mt-12 lg:px-4 mb-10">
-          <Link href="https://app.daily.dev/nitinreddy3" rel="noreferrer"><Image src="https://api.daily.dev/devcards/e80b5cd7453c4402aa5c5320adaf04c4.png?r=93f" alt="Nitin Reddy's Dev Card" width="400" height="550" /></Link>
+          <Link href="https://app.daily.dev/nitinreddy3" target="_blank" rel="noreferrer">
+            <Image src="https://api.daily.dev/devcards/e80b5cd7453c4402aa5c5320adaf04c4.png?r=93f" alt="Nitin Reddy's Dev Card" width="400" height="550" />
+          </Link>
           <div className="flex justify-center mt-6">
             <div className="flex md:flex lg:flex space-x-4 font-medium text-emerald-800 sm:block dark:text-white">
               <SocialLinks type="profile" />

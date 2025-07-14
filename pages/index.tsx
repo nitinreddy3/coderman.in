@@ -24,7 +24,7 @@ export default function Home() {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link
           rel="canonical"
-          href="https://emptystack.dev"
+          href="https://coderman.in"
           key="canonical"
         />
       </Head>

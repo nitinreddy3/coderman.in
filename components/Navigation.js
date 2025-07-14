@@ -6,39 +6,31 @@ function MobileNav({ open, setOpen }) {
   return (
     <div className={`absolute top-0 left-0 h-screen w-48 bg-white dark:bg-black transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
       <div className="flex flex-col items-center">
-        <Link href="/">
-          <Link href="/"
-            className={"font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
-            onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
-          >
-            About
-          </Link>
+        <Link href="/"
+          className={"font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
+          onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
+        >
+          About
         </Link>
-        <Link href="/blog">
-          <Link href="/blog"
-            className={" font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
-            onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
-          >
-            Blog
-          </Link>
+        <Link href="/blog"
+          className={" font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
+          onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
+        >
+          Blog
         </Link>
-        <Link href="/skills">
-          <Link href="/skills"
-            className={" font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
-          >
-            Skills
-          </Link>
-        </Link >
-        <Link href="/projects">
-          <Link href="/projects"
-            className={" font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
-            onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
-          >
-            Projects
-          </Link>
-        </Link >
-      </div >
-    </div >
+        <Link href="/skills"
+          className={" font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
+        >
+          Skills
+        </Link>
+        <Link href="/projects"
+          className={" font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
+          onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
+        >
+          Projects
+        </Link>
+      </div>
+    </div>
   )
 }
 
@@ -56,48 +48,38 @@ const Navigation = () => {
           <span className={`h-1 w-full bg-emerald-900 dark:bg-white rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"}`} />
           <span className={`h-1 w-full bg-emerald-900 dark:bg-white rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-3.5" : ""}`} />
         </div>
-        <Link href="/">
-          <Link href="/"
-            className={"font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 uppercase dark:text-white"}
-          >
-            CODERMAN
-          </Link>
+        <Link href="/"
+          className={"font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 uppercase dark:text-white"}
+        >
+          CODERMAN
         </Link>
         <div className="flex items-center">
           <div className="navbar md:flex lg:flex space-x-4 font-medium text-gray-800  sm:block dark:text-white">
-            <Link href="/">
-              <Link href="/"
-                className={"font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
-              >
-                About
-              </Link>
+            <Link href="/"
+              className={"font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
+            >
+              About
             </Link>
-            <Link href="/blog">
-              <Link href="/blog"
-                className={" font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
-              >
-                Blog
-              </Link>
+            <Link href="/blog"
+              className={" font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
+            >
+              Blog
             </Link>
-            <Link href="/skills">
-              <Link href="/skills"
-                className={" font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
-              >
-                Skills
-              </Link>
+            <Link href="/skills"
+              className={" font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
+            >
+              Skills
             </Link>
-            <Link href="/projects">
-              <Link href="/projects"
-                className={" font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
-              >
-                Projects
-              </Link>
-            </Link >
-          </div >
+            <Link href="/projects"
+              className={" font-medium tracking-wider transition-colors text-emerald-900 hover:text-sky-500 dark:text-white"}
+            >
+              Projects
+            </Link>
+          </div>
           <ThemeSwitch />
-        </div >
-      </div >
-    </div >
+        </div>
+      </div>
+    </div>
   )
 }
 
